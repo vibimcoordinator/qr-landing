@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0f2850">
+<title>sadá</title>
+<style>
+  :root {
+    --navy: #0f2850;
+    --gold: #f3c53a;
+    --gold-dark: #c9960a;
+    --ink: #22201a;
+    --muted: #8a8370;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--navy);
+  }
+  body { min-height: 100dvh; display: flex; flex-direction: column; }
+  .hero {
+    background: linear-gradient(160deg, var(--gold) 0%, var(--gold-dark) 100%);
+    padding: 40px 24px 60px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .hero .brand-mark { width: 60px; height: 60px; margin: 0 auto 12px; display: block; }
+  .hero .brand-name { font-size: 24px; font-weight: 800; letter-spacing: 3px; color: var(--navy); margin: 0; }
+  .hero .brand-tag {
+    font-size: 10.5px; font-weight: 700; letter-spacing: 1.8px;
+    color: rgba(15,40,80,0.7); margin: 3px 0 0; text-transform: uppercase;
+  }
+  .hero .verified {
+    margin-top: 20px; display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.4); padding: 7px 16px; border-radius: 999px;
+    font-size: 13px; font-weight: 700; color: var(--navy);
+  }
+  .sheet {
+    background: #fff;
+    border-radius: 26px 26px 0 0;
+    margin-top: -32px;
+    flex: 1;
+    padding: 30px 22px max(24px, env(safe-area-inset-bottom));
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -10px 28px rgba(0,0,0,0.10);
+  }
+  .sheet h1 { font-size: 20px; font-weight: 800; margin: 0 0 4px; color: var(--ink); }
+  .sheet .sub { font-size: 13px; color: var(--muted); margin: 0 0 22px; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  table td { padding: 10px 0; vertical-align: top; border-bottom: 1px solid #f1efe4; }
+  table tr:last-child td { border-bottom: none; }
+  table td.k { color: var(--muted); width: 108px; font-weight: 600; }
+  table td.v { color: var(--ink); font-weight: 600; }
+  .note { margin-top: 18px; padding-top: 16px; border-top: 1px dashed #e5e1d3; }
+  .note .lbl { font-size: 11px; font-weight: 800; letter-spacing: .6px; text-transform: uppercase; color: var(--gold-dark); margin: 0 0 6px; }
+  .note .val { font-size: 13.5px; color: var(--ink); margin: 0; line-height: 1.5; }
+  .spacer { flex: 1; min-height: 20px; }
+  .btn {
+    display: block; text-align: center; text-decoration: none;
+    background: var(--navy); color: #fff; padding: 17px; border-radius: 14px;
+    font-size: 15.5px; font-weight: 700; margin-top: 8px;
+    box-shadow: 0 8px 20px rgba(15,40,80,0.28);
+  }
+  .btn.disabled { background: #ddd8c8; color: #9c9683; box-shadow: none; pointer-events: none; }
+  .footer { text-align: center; font-size: 10.5px; color: #b9b298; margin-top: 16px; letter-spacing: .3px; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="46" fill="#0f2850"/>
+      <g fill="#f3c53a">
+        <polygon points="30,78 34,20 39,20 37,78"/>
+        <polygon points="43,78 47,14 52,14 50,78"/>
+        <polygon points="56,78 58,20 63,20 63,78"/>
+        <polygon points="69,78 66,28 71,28 74,78"/>
+      </g>
+    </svg>
+    <p class="brand-name">ĐÔNG ĐÔ</p>
+    <p class="brand-tag">Solid Partner &middot; Future Builder</p>
+    <div class="verified">&#9989; Bản vẽ đã xác thực</div>
+  </div>
+  <div class="sheet">
+    <h1>sadá</h1>
+    <p class="sub">Mã dự án: đá</p>
+    <table>
+      <tr><td class="k">Thời gian</td><td class="v">2026-09-08 23:05:29</td></tr>
+      <tr><td class="k">Địa điểm</td><td class="v">Công ty cổ phần đầu tư xây dựng phát triển Đông Đô</td></tr>
+      <tr><td class="k">Người xuất</td><td class="v">Admin</td></tr>
+      <tr><td class="k">Máy trạm</td><td class="v">Giang-PC</td></tr>
+    </table>
+    <div class="note"><p class="lbl">Ghi chú</p><p class="val">sđa</p></div>
+    <div class="spacer"></div>
+    <a class="btn" href="https://www.24h.com.vn/" target="_blank" rel="noopener">Xem tài liệu gốc &#8599;</a>
+    <p class="footer">DDIC BIM Center &mdash; Trang xác thực tự động, không chỉnh sửa nội dung này</p>
+  </div>
+</body>
+</html>
